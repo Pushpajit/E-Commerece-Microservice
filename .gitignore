@@ -1,0 +1,43 @@
+# -------------------------------------------------------------------
+# E-commerce Monorepo - Created by Gemini
+# -------------------------------------------------------------------
+
+### 1. Cart Microservice ###
+# Ignore dependencies and environment file for the cart service
+/cart_microservices/node_modules
+/cart_microservices/.env
+/cart_microservices/.env.*
+
+# Ignore logs and build output for the cart service
+/cart_microservices/logs/
+/cart_microservices/*.log
+/cart_microservices/dist
+/cart_microservices/build
+
+### 2. General Rules (for all sub-folders) ###
+# You can also use wildcards to ignore ALL node_modules
+# or .env files in any sub-directory. This is often easier.
+
+# Ignore all node_modules folders anywhere in the project
+**/node_modules
+
+# Ignore all .env files anywhere
+**/.env
+**/.env.*
+
+# Ignore all log folders/files anywhere
+**/logs
+**/*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Ignore all build output folders anywhere
+**/dist
+**/build
+
+### 3. OS & IDE Files ###
+# Ignore these files everywhere
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
